@@ -10,11 +10,13 @@ cv.waitKey(0, img)
 
 #  rading videos
 
-capt = cv.VideoCapture('/dog.mp4')
+# capt = cv.VideoCapture('/dog.mp4')
 
 
 
-print('hello world')
 
-capt = cv.absdiff()
+# capt = cv.absdiff()
 
+import pytorch
+
+import torch 
