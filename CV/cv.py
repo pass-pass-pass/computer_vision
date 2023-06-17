@@ -1,7 +1,5 @@
 import cv2 as cv
-img = cv.imread('cat.img')
 
-cv.waitKey(0, img)
 
 
 #  if there are too large images it goes off screen
@@ -17,6 +15,10 @@ cv.waitKey(0, img)
 
 # capt = cv.absdiff()
 
-import pytorch
+# import pytorch
 
 import torch 
+
+print(torch.__version__)
+scalar = torch.tensor(7)
+print(scalar.ndim)
