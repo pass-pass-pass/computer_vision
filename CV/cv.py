@@ -25,3 +25,8 @@ import torch
 print(torch.__version__)
 scalar = torch.tensor(7)
 print(scalar.ndim)
+
+
+#  creating tensor
+scalar = torch.tensor(8)
+print(scalar)
