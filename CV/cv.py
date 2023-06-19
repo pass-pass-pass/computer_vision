@@ -45,12 +45,18 @@ matrix = torch.tensor([    [1,2]        ,       [3,4]   ])
 matrix[0]
 # tensor
 TENSOR = torch.tensor([[[1,2,3]     
-                        ,[1,2,3],
+                        ,[1,2,3], 
                         [3,4,5],
                            ]])
-TENSOR.ndim
+
 
 tensor1 = torch.tensor([[[[[1,2,3], [1,2,3] , 
                            [3,45,5],
                            [4,5,6],
                            [3,9,0]]]]])
+print(tensor1.ndim)
+
+
+
+print(tensor1.shape)
+random = torch.rand(3,4)
