@@ -31,3 +31,13 @@ print(scalar.ndim)
 scalar = torch.tensor(8)
 scalar2 = torch.tensor(9)
 print(scalar.ndim)
+print(scalar.item())
+
+#  vector
+vector = torch.tensor([8,8])
+print(vector.ndim)
+print(vector.shape)
+
+#  matrix
+
+matrix = torch.tensor([1,2], [3,4])
