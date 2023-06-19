@@ -64,3 +64,29 @@ random = torch.rand(3,4)
 
 zeros = torch.rand()
 one_to = torch.arange(start = 1 ,end  = 1089, step = 123 )
+
+torch.matmul(one_to, one_to)
+# find mean
+torch.min(zeros)
+zeros.min()
+torch.max(zeros)
+torch.sum(zeros)
+
+# finf the position of the min value
+zeros.argmin()
+
+# max
+zeros.argmax()
+
+#  from numpy to pytorch
+tensor3 = torch.from_numpy()
+#  from pytorch to numpy
+tensor4 = TENSOR.numpy()
+
+
+
+#  seed
+
+
+random_tensor = torch.rand(3,4)
+random_tensor_b = torch.rand(3,4)
