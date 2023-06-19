@@ -40,4 +40,13 @@ print(vector.shape)
 
 #  matrix
 
-matrix = torch.tensor([1,2], [3,4])
+matrix = torch.tensor([    [1,2]        ,       [3,4]   ])
+
+matrix[0]
+# tensor
+TENSOR = torch.tensor([[[1,2,3]     
+                        ,[1,2,3],
+                        [3,4,5],
+                           ]])
+TENSOR.ndim
+
