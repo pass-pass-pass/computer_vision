@@ -30,4 +30,4 @@ print(scalar.ndim)
 #  creating tensor
 scalar = torch.tensor(8)
 scalar2 = torch.tensor(9)
-print(scalar)
+print(scalar.ndim)
