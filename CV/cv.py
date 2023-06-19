@@ -50,3 +50,7 @@ TENSOR = torch.tensor([[[1,2,3]
                            ]])
 TENSOR.ndim
 
+tensor1 = torch.tensor([[[[[1,2,3], [1,2,3] , 
+                           [3,45,5],
+                           [4,5,6],
+                           [3,9,0]]]]])
