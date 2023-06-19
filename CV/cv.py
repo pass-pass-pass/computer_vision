@@ -60,3 +60,7 @@ print(tensor1.ndim)
 
 print(tensor1.shape)
 random = torch.rand(3,4)
+
+
+zeros = torch.rand()
+one_to = torch.arange(start = 1 ,end  = 1089, step = 123 )
