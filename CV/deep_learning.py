@@ -39,5 +39,8 @@ plot_prediciton()
 class LinearRegressionModel(nn.Module):
     def __init__(self):
         super().__init__()
-        self.weights = nn.Parameter
-        
+        self.weights = nn.Parameter(torch.rand(1,  dtype = torch.float ))
+        self.bias = nn.Parameter(torch.rand(1,dtype = torch.float))
+    def forward(self , x:torch.Tensor) -> torch.Tensor:
+        return self.weights * x + self.bias 
+    
