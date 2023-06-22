@@ -38,9 +38,9 @@ plot_prediciton()
 # machine learning started 
 class LinearRegressionModel(nn.Module):
     def __init__(self):
-        super().__init__()
-        self.weights = nn.Parameter(torch.rand(1,  dtype = torch.float ))
-        self.bias = nn.Parameter(torch.rand(1,dtype = torch.float))
-    def forward(self , x:torch.Tensor) -> torch.Tensor:
-        return self.weights * x + self.bias 
-    
+        super().__init__() 
+        self.weights = nn.Parameter(torch.rand(1,  dtype = torch.float ))    #random weights, and find the most ideal one after this
+        self.bias = nn.Parameter(torch.rand(1,dtype = torch.float))            # samel, random bias
+
+    def forward(self , x:torch.Tensor) -> torch.Tensor:             # define the computation 
+        return self.weights * x + self.bias                        # formula
