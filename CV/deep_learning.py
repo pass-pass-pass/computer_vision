@@ -32,4 +32,12 @@ def plot_prediciton(train_data = x_train,train_labels = y_train, test_data = x_t
         plt.scatter(test_data, predictions, label = 'prediciton', s =4, c='r')
     plt.legend(prop = {'size':14   })
     plt.show()
-plot_prediciton()   ''
+plot_prediciton()
+
+
+# machine learning started 
+class LinearRegressionModel(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.weights = nn.Parameter
+        
