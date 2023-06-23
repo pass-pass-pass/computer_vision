@@ -28,6 +28,7 @@ for X, y in test_dataloader:
     break
 
 
+
 device = (
     "cuda"
     if torch.cuda.is_available()
@@ -40,7 +41,7 @@ print(f"Using {device} device")
 class neuralNetWork(nn.Module):
     def __init__(self):
         super().__init__()
-        self.flattern = nn.Flattern()
+        self.flattern = nn.Flatten()
         self.linear_relu_stack = nn.Sequential(
             nn.Linear(28 * 28, 512),
             nn.ReLU(),
@@ -52,3 +53,23 @@ class neuralNetWork(nn.Module):
         x = self.flattern(x)
         logits = self.linear_relu_stack(x)
         return logits
+model = neuralNetWork().to(device=device)
+print(model)
+
+loss_fn = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(model.parameters() , lr = 1e-3)
+
+def train(dataloader, model, loss_fn, optimizer):
+    size = len(dataloader.dataset)
+    model.train()
+    for batch, (X, y) in enumerate(dataloader):
+        X, y = X.to(device), y.to(device)
+
+        # Compute prediction error
+        pred = model(X)
+        loss = loss_fn(pred, y)
+
+        # Backpropagation
+        loss.backward()
+        optimizer.step()
+        optimizer.zero_grad()
