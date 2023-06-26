@@ -34,6 +34,7 @@ for X, y in test_dataloader:
 
 
 
+
 device = (
     "cuda"
     if torch.cuda.is_available()
