@@ -54,13 +54,14 @@ class neuralNetWork(nn.Module):
             nn.Linear(512,512),
             nn.ReLU(),
             nn.Linear(512, 10)
-        )
+        ) 
     def forward(self, x):
         x = self.flattern(x)
         logits = self.linear_relu_stack(x)
         return logits
 model = neuralNetWork().to(device=device)
 print(model)
+
 
 loss_fn = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters() , lr = 1e-3)
@@ -73,7 +74,7 @@ def train(dataloader, model, loss_fn, optimizer):
 
         # Compute prediction error
         pred = model(X)
-        loss = loss_fn(pred, y)
+        loss = loss_fn(pred, y) 
 
         # Backpropagation
         loss.backward()
