@@ -63,6 +63,7 @@ model = neuralNetWork().to(device=device)
 print(model)
 
 
+
 loss_fn = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters() , lr = 1e-3)
 
