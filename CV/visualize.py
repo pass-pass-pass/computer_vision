@@ -14,3 +14,5 @@ plt.figure(figsize=(8,8))
 plt.subplot(3,1,1)
 plt.plot(x, y)  
 plt.show()
+
+
