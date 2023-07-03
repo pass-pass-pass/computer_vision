@@ -24,3 +24,4 @@ urlretrieve('https://hub.jovian.ml/wp-content/uploads/2020/08/climate.csv')
 covid_Df = pd.read_csv('taly-covid-daywise.csv')
 print(covid_Df)
 
+
