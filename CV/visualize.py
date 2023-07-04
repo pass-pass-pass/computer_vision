@@ -25,3 +25,4 @@ covid_Df = pd.read_csv('taly-covid-daywise.csv')
 print(covid_Df)
 
 
+
