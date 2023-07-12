@@ -217,6 +217,7 @@ plt.show()
 
 
 
+
 # df.sample(19)
 
 # df.loc[12:14]
